@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOY+ Food Ingredients | Proteínas e Ingredientes Vegetales</title>
+  <meta name="description" content="Elaboramos proteínas e ingredientes vegetales a base de soja para la industria de alimentos y bebidas. Calidad certificada SENASA, BPM, Kosher y POES." />
+  <link rel="icon" type="image/png" href="assets/logos/soy-blanco.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo-link" aria-label="Inicio SOY+">
+        <img src="assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="logo-header" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="#calidad">Calidad</a>
+        <a href="#contacto">Contacto</a>
+        <span class="lang-switch" role="button" tabindex="0">EN/ESP</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <img src="assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="hero-logo" />
+  </section>
+
+  <!-- ============ TAGLINE ============ -->
+  <section class="tagline">
+    <p>Elaboramos Proteínas e Ingredientes Vegetales, para abastecer a la Industria de alimentos y bebidas.</p>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section class="nosotros" id="nosotros">
+    <div class="cards">
+      <article class="card">
+        <img src="assets/icons/valores.png" alt="" class="card-icon" />
+        <h3>Valores</h3>
+        <p>Compromiso con el cliente<br />
+        Ética productiva y comercial<br />
+        Calidad en el proceso productivo<br />
+        Compromiso con el medio ambiente</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/icons/mision.png" alt="" class="card-icon" />
+        <h3>Misión</h3>
+        <p>Agregar valor a la producción primaria de la soja y sus derivados para la alimentación humana.</p>
+      </article>
+
+      <article class="card">
+        <img src="assets/icons/vision.png" alt="" class="card-icon" />
+        <h3>Visión</h3>
+        <p>Ser referente regional en la producción y comercialización de productos derivados de la soja, exportando alimentos de calidad al mundo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CALIDAD ============ -->
+  <section class="calidad" id="calidad">
+    <div class="calidad-inner">
+      <h2>Calidad</h2>
+
+      <div class="calidad-content">
+        <div>
+          <p>Alimentos Texturizados S.A. implementa distintas normas, procedimientos y protocolos para obtener y mantener un producto con una alta calidad, higiene e inocuidad.</p>
+          <p>Nuestro proceso se encuentra bajo la implementación de Buenas Prácticas de Manufactura (BPM), (POES). Y estamos en la Implementación del sistema de Análisis de Peligros y Puntos Críticos de Control (HACCP), para transmitir a nuestros clientes confianza y seguridad en nuestros productos SOY+.</p>
+        </div>
+
+        <div>
+          <p>Contamos con certificaciones <span class="highlight">KOSHER, BPM, POES</span>, y con un sistema de trabajo, orientado en el entrenamiento <span class="highlight">continuo de nuestro personal en HACCP y en proceso de certificación HALAL.</span></p>
+          <p>Nuestro establecimiento se encuentra aprobado y habilitado por SENASA. Contamos con Registro Nacional de establecimiento (RNP) y Registro Nacional de Producto Alimenticio (RNPA) cumpliendo con las normativas vigentes.</p>
+        </div>
+      </div>
+
+      <div class="certs">
+        <div class="certs-label">
+          Certificaciones<br />que nos avalan
+        </div>
+        <div class="certs-logos">
+          <img src="assets/certs/senasa.png" alt="SENASA - Servicio Nacional de Sanidad y Calidad Agroalimentaria" />
+          <img src="assets/certs/bpm.png" alt="BPM - Buenas Prácticas de Manufactura" />
+          <img src="assets/certs/ak-kosher.png" alt="AK - Certificación Kosher" />
+          <img src="assets/certs/poes.png" alt="POES - Procedimientos Operativos Estandarizados" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACTO ============ -->
+  <footer class="footer" id="contacto">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <h2>Contacto</h2>
+        <h3>Ubicación</h3>
+        <address>
+          España 137, Paraná<br />
+          Entre Ríos, Argentina
+        </address>
+
+        <div class="footer-contact">
+          <a href="mailto:ventas@alimentostexturizados.com">
+            <img src="assets/icons/email.png" alt="" />
+            ventas@alimentostexturizados.com
+          </a>
+          <a href="https://wa.me/5493434388554" target="_blank" rel="noopener">
+            <img src="assets/icons/whatsapp.png" alt="" />
+            +54 9 343 4388554
+          </a>
+        </div>
+
+        <img src="assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="footer-logo" />
+      </div>
+
+      <!-- IMPORTANTE: Reemplazar YOUR_FORM_ID con tu ID real de Formspree -->
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="asunto" placeholder="Asunto" required />
+        <textarea name="mensaje" placeholder="Escriba su mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.9!2d-60.5285!3d-31.7395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b450c6a6a25d8d%3A0x0!2zRXNwYcOxYSAxMzcsIFBhcmFuw6EsIEVudHJlIFLDrW9z!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de ubicación: España 137, Paraná, Entre Ríos">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

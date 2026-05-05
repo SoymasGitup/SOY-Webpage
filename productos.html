@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | SOY+ Food Ingredients</title>
+  <meta name="description" content="Conocé nuestros productos: Proteína de Soja Texturizada, Harina de Soja Desgrasada y Harina de Soja Desgrasada Texturizada." />
+  <link rel="icon" type="image/png" href="assets/logos/soy-blanco.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo-link" aria-label="Inicio SOY+">
+        <img src="assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="logo-header" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="index.html#calidad">Calidad</a>
+        <a href="index.html#contacto">Contacto</a>
+        <span class="lang-switch" role="button" tabindex="0">EN/ESP</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PRODUCTOS GRID ============ -->
+  <section class="productos-grid">
+    <div class="productos-inner">
+      <h1>Nuestros Productos</h1>
+
+      <div class="productos-cards">
+        <article class="producto-card">
+          <img src="assets/icons/producto-tvp.png" alt="" class="producto-card-icon" />
+          <h2>Proteína de Soja<br />Texturizada</h2>
+          <a href="productos/proteina-de-soja-texturizada.html" class="btn-ver">ver+</a>
+        </article>
+
+        <article class="producto-card">
+          <img src="assets/icons/producto-hsd.png" alt="" class="producto-card-icon" />
+          <h2>Harina de Soja<br />Desgrasada</h2>
+          <a href="productos/harina-de-soja-desgrasada.html" class="btn-ver">ver+</a>
+        </article>
+
+        <article class="producto-card">
+          <img src="assets/icons/producto-hsdt.png" alt="" class="producto-card-icon" />
+          <h2>Harina de Soja<br />Desgrasada Texturizada</h2>
+          <a href="productos/harina-de-soja-desgrasada-texturizada.html" class="btn-ver">ver+</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACTO ============ -->
+  <footer class="footer" id="contacto">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <h2>Contacto</h2>
+        <h3>Ubicación</h3>
+        <address>
+          España 137, Paraná<br />
+          Entre Ríos, Argentina
+        </address>
+
+        <div class="footer-contact">
+          <a href="mailto:ventas@alimentostexturizados.com">
+            <img src="assets/icons/email.png" alt="" />
+            ventas@alimentostexturizados.com
+          </a>
+          <a href="https://wa.me/5493434388554" target="_blank" rel="noopener">
+            <img src="assets/icons/whatsapp.png" alt="" />
+            +54 9 343 4388554
+          </a>
+        </div>
+
+        <img src="assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="footer-logo" />
+      </div>
+
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="asunto" placeholder="Asunto" required />
+        <textarea name="mensaje" placeholder="Escriba su mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.9!2d-60.5285!3d-31.7395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b450c6a6a25d8d%3A0x0!2zRXNwYcOxYSAxMzcsIFBhcmFuw6EsIEVudHJlIFLDrW9z!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de ubicación: España 137, Paraná, Entre Ríos">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
