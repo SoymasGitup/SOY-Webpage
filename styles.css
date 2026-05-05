@@ -2,9 +2,11 @@
    SOY+ Food Ingredients - Estilos
    ================================================ */
 
-/* Tipografía - reemplazo de Nexa por Google Fonts
-   (Para migrar a Nexa en el futuro: cambiar @import y los font-family) */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+/* Tipografía: Nexa via Adobe Fonts (Typekit)
+   El <link> a Typekit se carga desde cada HTML.
+   - Nexa Rust Sans (weight 900) → títulos
+   - Nexa (weight 600 = Bold) → texto destacado
+   - Nexa (weight 500 = SemiBold) → cuerpo */
 
 /* ================================================
    VARIABLES
@@ -23,16 +25,15 @@
   --texto-medio: #555;
   --blanco: #FFFFFF;
 
-  /* Tipografía
-     Display = Fredoka 700 (reemplazo de Nexa Rust Sans Black)
-     Texto destacado = Nunito 700 (reemplazo de Nexa Bold)
-     Texto cuerpo = Nunito 400 */
-  --font-display: 'Fredoka', system-ui, sans-serif;
-  --font-body: 'Nunito', system-ui, sans-serif;
+  /* Tipografía Nexa via Adobe Fonts
+     --font-display: títulos (font-weight: 900)
+     --font-body: texto general (font-weight: 500 cuerpo, 600 destacado) */
+  --font-display: 'nexa-rust-sans', system-ui, sans-serif;
+  --font-body: 'nexa', system-ui, sans-serif;
 
   /* Layout */
   --max-width: 1280px;
-  --header-height: 90px;
+  --header-height: 80px;
 }
 
 /* ================================================
@@ -50,7 +51,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--texto-oscuro);
   line-height: 1.5;
   background: var(--blanco);
@@ -71,7 +72,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.01em;
 }
@@ -106,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-header {
-  height: 56px;
+  height: 50px;
   width: auto;
 }
 
@@ -119,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav a {
   color: var(--blanco);
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -149,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .lang-switch {
   color: var(--blanco);
-  font-weight: 800;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -191,8 +192,8 @@ h1, h2, h3, h4, h5, h6 {
    ================================================ */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
+  height: 75vh;
+  min-height: 520px;
   margin-top: var(--header-height);
   background: url('assets/img/hero-tvp.jpg') center/cover no-repeat;
   display: flex;
@@ -205,11 +206,11 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.55) 100%);
 }
 
 .hero-logo {
-  width: min(420px, 60vw);
+  width: min(340px, 50vw);
   position: relative;
   z-index: 2;
   animation: fadeInScale 1s ease both;
@@ -300,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card h3 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dorado);
   font-size: 28px;
   letter-spacing: 0.02em;
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card p {
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dorado);
   font-size: 15px;
   line-height: 1.5;
@@ -381,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .calidad-content p .highlight {
   color: var(--magenta);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .certs {
@@ -449,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-info h3 {
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -541,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   padding: 14px 32px;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -560,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-status {
   margin-top: 12px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   min-height: 20px;
 }
 
@@ -768,7 +769,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .producto-block h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   color: var(--dorado);
   margin-bottom: 16px;
@@ -793,7 +794,7 @@ h1, h2, h3, h4, h5, h6 {
 .producto-block ul li::before {
   content: '— ';
   color: var(--dorado);
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 4px;
 }
 
@@ -831,7 +832,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 32px;
   border-radius: 6px;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
