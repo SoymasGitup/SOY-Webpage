@@ -397,20 +397,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .certs {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 48px;
   padding-top: 40px;
   border-top: 1px solid rgba(0,0,0,0.08);
-}
-
-.certs-label {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.2;
-  color: var(--texto-oscuro);
 }
 
 .certs-logos {
@@ -425,14 +413,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 80px;
   width: auto;
   object-fit: contain;
-  opacity: 0.85;
-  filter: grayscale(0.2);
-  transition: opacity 0.3s ease, filter 0.3s ease;
+  opacity: 0.95;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .certs-logos img:hover {
   opacity: 1;
-  filter: grayscale(0);
+  transform: scale(1.05);
 }
 
 /* ================================================
@@ -490,6 +477,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
   font-size: 15px;
   font-weight: 600;
+  color: var(--blanco);
   transition: opacity 0.2s ease;
 }
 
@@ -498,8 +486,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-contact img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 
@@ -696,7 +684,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .producto-detail-section {
   position: relative;
-  padding: 100px 32px;
+  padding: 72px 32px;
   overflow: hidden;
 }
 
@@ -726,7 +714,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1.3fr 1fr;
   gap: 48px;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 
 .producto-detail h1 {
@@ -800,13 +788,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .producto-block ul {
   list-style: none;
+  padding-left: 0;
+}
+
+.producto-block ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
 }
 
 .producto-block ul li::before {
-  content: '— ';
-  color: var(--dorado);
-  font-weight: 600;
-  margin-right: 4px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 18px;
+  height: 18px;
+  background: url('assets/logos/soy-dorado.png') center/contain no-repeat;
 }
 
 .producto-block + .producto-block {
@@ -817,7 +815,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  margin-top: 48px;
+  margin-top: 16px;
 }
 
 /* Sección "ver otros productos" */
@@ -922,14 +920,9 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
-  .certs {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    text-align: center;
-  }
-
   .certs-logos {
     justify-content: center;
+    gap: 20px;
   }
 }
 
