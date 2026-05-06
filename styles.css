@@ -685,7 +685,6 @@ h1, h2, h3, h4, h5, h6 {
 .producto-detail-section {
   position: relative;
   padding: 72px 32px;
-  overflow: hidden;
 }
 
 .producto-detail-section.bg-tvp {
@@ -757,7 +756,6 @@ h1, h2, h3, h4, h5, h6 {
 .producto-image-wrap .producto-foto {
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.15));
 }
 
 .producto-content {
@@ -815,7 +813,8 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  margin-top: 16px;
+  margin-top: 40px;
+  align-items: start;
 }
 
 /* Sección "ver otros productos" */
