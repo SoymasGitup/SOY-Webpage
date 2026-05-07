@@ -21,12 +21,6 @@ if (menuToggle && nav) {
   });
 }
 
-// === Switch de idioma (placeholder, no funcional aún) ===
-const langSwitch = document.querySelector('.lang-switch');
-if (langSwitch) {
-  langSwitch.addEventListener('click', () => {
-    alert('Versión en inglés próximamente / English version coming soon');
-  });
 }
 
 // === Formulario de contacto ===
