@@ -802,7 +802,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0.35em;
   width: 18px;
   height: 18px;
-  background: url('assets/logos/soy-dorado.png') center/contain no-repeat;
+  background: url('assets/logos/favicon.png') center/contain no-repeat;
 }
 
 .producto-block + .producto-block {
