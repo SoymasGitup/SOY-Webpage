@@ -746,10 +746,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .producto-image-wrap .flecha {
   position: absolute;
-  left: -120px;
+  left: -60px;
   top: 50%;
   transform: translateY(-50%);
-  width: 130px;
+  width: 100px;
   pointer-events: none;
 }
 
