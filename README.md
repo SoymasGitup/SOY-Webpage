@@ -100,7 +100,7 @@ Está visualmente presente pero no funcional (al hacer click muestra un mensaje 
 
 ## Notas de mantenimiento
 
-- **Editar textos:** abrí el HTML correspondiente con cualquier editor (VS Code, Notepad++, hasta el Bloc de Notas) y modificá el texto entre las etiquetas.
+- **Editar textos:** abrí el HTML correspondiente con cualquier editor (VS Code, soy-blanco.png++, hasta el Bloc de Notas) y modificá el texto entre las etiquetas.
 - **Cambiar colores:** todos los colores están en `styles.css` al inicio, en `:root`.
 - **Agregar productos:** duplicá uno de los archivos en `productos/`, renombralo, editá el contenido, y agregá una nueva tarjeta en `productos.html`.
 
