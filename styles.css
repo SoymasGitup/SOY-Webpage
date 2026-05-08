@@ -248,14 +248,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tagline p {
-  font-family: var(--font-display);
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-weight: 600;
   color: var(--blanco);
-  font-size: clamp(20px, 2.4vw, 28px);
-  line-height: 1.4;
+  font-size: 19px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   max-width: 780px;
   margin: 0 auto;
-  letter-spacing: -0.005em;
+  line-height: 1.4;
 }
 
 /* ================================================
