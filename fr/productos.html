@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits | SOY+ Food Ingredients</title>
+  <meta name="description" content="Découvrez nos produits : Protéine de Soja Texturée, Farine de Soja Dégraissée et Farine de Soja Dégraissée Texturée." />
+  <link rel="icon" type="image/png" href="../assets/logos/favicon.png" />
+  <link rel="stylesheet" href="https://use.typekit.net/dzq4suj.css" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/fr/" class="logo-link" aria-label="SOY+ Accueil">
+        <img src="../assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="logo-header" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="/fr/#apropos">À propos</a>
+        <a href="productos.html" class="active">Produits</a>
+        <a href="/fr/#qualite">Qualité</a>
+        <a href="/fr/#contact">Contact</a>
+        <div class="lang-group">
+          <a href="/en/productos.html" class="lang-switch">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="/productos.html" class="lang-switch">ESP</a>
+          <span class="lang-sep">|</span>
+          <span class="lang-switch lang-active">FR</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="productos-grid">
+    <div class="productos-inner">
+      <h1>Nos Produits</h1>
+
+      <div class="productos-cards">
+        <article class="producto-card">
+          <img src="../assets/icons/producto-tvp.png" alt="" class="producto-card-icon" />
+          <h2>Protéine de Soja<br />Texturée</h2>
+          <a href="productos/proteina-de-soja-texturizada.html" class="btn-ver">voir+</a>
+        </article>
+
+        <article class="producto-card">
+          <img src="../assets/icons/producto-hsd.png" alt="" class="producto-card-icon" />
+          <h2>Farine de Soja<br />Dégraissée</h2>
+          <a href="productos/harina-de-soja-desgrasada.html" class="btn-ver">voir+</a>
+        </article>
+
+        <article class="producto-card">
+          <img src="../assets/icons/producto-hsdt.png" alt="" class="producto-card-icon" />
+          <h2>Farine de Soja<br />Dégraissée Texturée</h2>
+          <a href="productos/harina-de-soja-desgrasada-texturizada.html" class="btn-ver">voir+</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <h2>Contact</h2>
+        <h3>Localisation</h3>
+        <address>
+          Villa Aranguren,<br />
+          Entre Ríos, Argentine.
+        </address>
+
+        <div class="footer-contact">
+          <a href="mailto:ventas@alimentostexturizados.com">
+            <img src="../assets/icons/email.png" alt="" />
+            ventas@alimentostexturizados.com
+          </a>
+          <a href="https://wa.me/5491165141112" target="_blank" rel="noopener">
+            <img src="../assets/icons/whatsapp.png" alt="" />
+            +54 9 11 6514 1112
+          </a>
+        </div>
+
+        <img src="../assets/logos/soy-blanco.png" alt="SOY+ Food Ingredients" class="footer-logo" />
+      </div>
+
+      <form class="form" action="https://formspree.io/f/xqendadk" method="POST">
+        <input type="text" name="nombre" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="asunto" placeholder="Sujet" required />
+        <textarea name="mensaje" placeholder="Écrivez votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.7!2d-60.1802694!3d-32.2422762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6a3f275cc79bf%3A0xc38da9ec4b45b8eb!2sALIMENTOS%20TEXTURIZADOS%20SA!5e0!3m2!1sfr!2sar!4v1700000000000!5m2!1sfr!2sar"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Carte de localisation : Villa Aranguren, Entre Ríos">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

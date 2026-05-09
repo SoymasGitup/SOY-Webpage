@@ -153,6 +153,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.9;
 }
 
+.lang-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-sep {
+  color: var(--blanco);
+  opacity: 0.5;
+  font-size: 16px;
+}
+
 .lang-switch {
   color: var(--blanco);
   font-family: var(--font-body);
@@ -163,10 +175,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   user-select: none;
   transition: opacity 0.2s ease;
+  text-decoration: none;
 }
 
 .lang-switch:hover {
   opacity: 0.85;
+}
+
+.lang-active {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* Menú mobile */
