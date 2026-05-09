@@ -189,6 +189,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+.lang-active.lang-en { color: #FFBC22; }
+.lang-active.lang-esp { color: #C6C607; }
+.lang-active.lang-fr { color: #AD1A6B; }
+
+.lang-switch:not(.lang-active) {
+  opacity: 0.45;
+}
+
 .lang-switch[href="/en/"],
 .lang-switch[href="/en/productos.html"],
 .lang-switch[href*="/en/productos/"] {
