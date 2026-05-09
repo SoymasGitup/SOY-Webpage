@@ -176,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   user-select: none;
   transition: opacity 0.2s ease;
   text-decoration: none;
+  position: relative;
 }
 
 .lang-switch:hover {
@@ -192,6 +193,16 @@ h1, h2, h3, h4, h5, h6 {
 .lang-active.lang-en { color: #FFBC22; }
 .lang-active.lang-esp { color: #C6C607; }
 .lang-active.lang-fr { color: #AD1A6B; }
+
+.lang-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--blanco);
+}
 
 .lang-switch:not(.lang-active) {
   opacity: 0.45;
@@ -215,8 +226,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #AD1A6B;
 }
 
-.lang-active {
-  opacity: 0.6;
+.lang-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--blanco);
 }
 
 /* Menú mobile */
