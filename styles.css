@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.nav a::after {
+.nav a:not(.lang-switch)::after {
   content: '';
   position: absolute;
   left: 0;
@@ -183,9 +183,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lang-active {
-  opacity: 0.5;
+  opacity: 1;
   cursor: default;
   pointer-events: none;
+  font-weight: 900;
 }
 
 .lang-switch[href="/en/"],
