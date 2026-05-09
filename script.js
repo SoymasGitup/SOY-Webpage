@@ -21,8 +21,6 @@ if (menuToggle && nav) {
   });
 }
 
-}
-
 // === Formulario de contacto ===
 // IMPORTANTE: Para que funcione el envío de mails es necesario crear una cuenta en
 // Formspree (https://formspree.io) y reemplazar 'YOUR_FORM_ID' en el atributo action
