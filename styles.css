@@ -188,6 +188,28 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
+.lang-switch[href="/en/"],
+.lang-switch[href="/en/productos.html"],
+.lang-switch[href*="/en/productos/"] {
+  color: #FFBC22;
+}
+
+.lang-switch[href="/"],
+.lang-switch[href="/productos.html"],
+.lang-switch[href*="/productos/"] {
+  color: #C6C607;
+}
+
+.lang-switch[href="/fr/"],
+.lang-switch[href="/fr/productos.html"],
+.lang-switch[href*="/fr/productos/"] {
+  color: #AD1A6B;
+}
+
+.lang-active {
+  opacity: 0.6;
+}
+
 /* Menú mobile */
 .menu-toggle {
   display: none;
